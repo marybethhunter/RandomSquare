@@ -13,7 +13,7 @@ List<int> randomNums = new List<int>();
 for (int i = 0; i < 20; i++)
 {
     Random random = new Random();
-    int num = random.Next(0, 50);
+    int num = random.Next(1, 50);
 
     randomNums.Add(num);
 }
@@ -21,6 +21,7 @@ for (int i = 0; i < 20; i++)
 //square
 var randomNumsSquared = randomNums.Select(num => num * num);
 
+//remove odd numbers
 var randomNumsSquaredWithoutOddNums = randomNumsSquared.Where(num => num % 2 == 0);
 
 //seeing if list of 20 random numbers between 1-50 populate
