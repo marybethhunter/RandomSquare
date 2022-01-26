@@ -25,23 +25,27 @@ var randomNumsSquared = randomNums.Select(num => num * num);
 var randomNumsSquaredWithoutOddNums = randomNumsSquared.Where(num => num % 2 == 0);
 
 //seeing if list of 20 random numbers between 1-50 populate
-foreach (int num in randomNums)
-{
-    Console.WriteLine($"{num}");
-}
+//foreach (int num in randomNums)
+//{
+//    Console.WriteLine($"{num}");
+//}
 
-Console.WriteLine("___________________");
+//Console.WriteLine("___________________");
 
-//seeing if each number in the above list gets squared
-foreach (int num in randomNumsSquared)
-{
-    Console.WriteLine($"{num}");
-}
+////seeing if each number in the above list gets squared
+//foreach (int num in randomNumsSquared)
+//{
+//    Console.WriteLine($"{num}");
+//}
 
-Console.WriteLine("___________________");
+//Console.WriteLine("___________________");
 
-//seeing if the odd numbers get removed
-foreach (int num in randomNumsSquaredWithoutOddNums)
-{
-    Console.WriteLine($"{num}");
-}
+////seeing if the odd numbers get removed
+//foreach (int num in randomNumsSquaredWithoutOddNums)
+//{
+//    Console.WriteLine($"{num}");
+//}
+
+Console.WriteLine($"Original random numbers: {string.Join(", ", randomNums)}");
+Console.WriteLine($"Those numbers squared: {string.Join(", ", randomNumsSquared)}");
+Console.WriteLine($"Only even numbers: {string.Join(", ", randomNumsSquaredWithoutOddNums)}");
